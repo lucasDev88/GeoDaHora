@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('../assets/images/geodahora.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 43vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-align: center;
+    position: relative;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header nav {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 40;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FFD700;
+    transform: translateY(-3px); 
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    margin: 20px 0;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 1.2;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #FFD700;
+    margin: 10px auto 0;
+}
+
+#inicio p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold; 
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #FFD700;
+}
+
+.no-underline {
+    text-decoration: none;
+    color: #007BFF; 
+}
+
+.no-underline:hover {
+    text-decoration: underline;
+    color: #FFD700;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Layout Responsivo */
+@media (max-width: 810px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    header {
+        height: auto;
+        padding: 110px 0px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    #inicio p {
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 789px) {
+    header {
+        height: 350px;
+        padding: 110px 10px;
+    }
+
+    nav {
+        right: 200px;
+        z-index: 40;
+        width: 45%;
+    }
+
+}
+
+#modal-topic {
+    align-items: center;
+    justify-content: center;
+    height: screen;
+    background-color: rgba(40, 38, 38, 0.5);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+}
+
+#messages-container {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+#configuration-panel {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Começa fora da tela à direita */
+    width: 300px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    transition: left 1s ease; /* Animação suave para a posição à direita */
+  }
+  
+#configuration-panel.active {
+    left: 0; /* Quando ativo, aparece na tela */
+}
+
+.GeoDaHora {
+    transition: all 0.5s;
+    width: 50px;
+    height: 50px;
+}
+
+.GeoDaHora:hover {
+    transform: scale(1.3);
+}

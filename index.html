@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoDaHora</title>
+    <link rel="stylesheet" href="src/styleTailwindCSS/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="icon" href="./src/assets/images/Logo_principal.jpeg">
+</head>
+<body>
+    <aside id="configuration-panel" class="w-64 fixed bg-gray-800 text-white h-screen flex-col z-50">
+        <div class="p-4 text-xl font-bold flex flex-row">
+            <img src="./src/assets/images/Logo_principal.jpeg" class="GeoDaHora">
+            <p class="ml-[10px] mt-[5px]">GeoDaHora</p>
+        </div>
+
+        <nav class="flex-1">
+            <ul class="space-y-2">
+                <li>
+                    <button id="exit" class="block p-4 hover:bg-gray-700 w-full text-left text-xl">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Sair da conta
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="./src/topicos/semiarido.html">Semiárido</a></li>
+                <li><a href="./src/topicos/africa.html">África</a></li>
+                <li><a href="./src/topicos/américa.html">América</a></li>
+                <li><a href="./dashboard.html">Administrador? Entre!</a></li>
+            </ul>
+        </nav>
+
+        <button class="absolute top-0 right-0 mr-4 mt-4" id="config">
+            <i class="fa fa-gear fa-2xl"></i>
+        </button>
+    </header>
+
+
+    <section id="inicio">
+        <h1>Bem-Vindo ao Geo Da Hora</h1>
+
+        <p>
+            O site é composto por três alunos do 8º ano da escola Instituto Educare, que tem como o objetivo apresentar o clima semiárido com foco no continente africano e na América.
+            <br>
+            <br>
+            Os sites utilizados para a pesquisa foram: 
+            <br>
+            <a class="no-underline" href="https://pt.wikipedia.org">Wikipédia</a>
+            <br>
+            <a class="no-underline" href="https://brasilescola.uol.com.br/">Brasil Escola</a>
+            <br>
+            <a class="no-underline" href="https://www.todamateria.com.br/">Toda Matéria</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <strong>Discentes:</strong> Rhuan Carlos, Pedro Lucas e Lucas Felipe
+            <br>
+            <br>
+            <strong>Docente:</strong> Paulo Santos
+        </p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Geo Da Hora - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="src/js/topicosJS/script.js"></script>
+</body>
+</html>

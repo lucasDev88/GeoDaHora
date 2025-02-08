@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - GeoDaHora</title>
+    <link rel="stylesheet" href="./src/styleTailwindCSS/output.css">
+    <link rel="stylesheet" href="./src/styles/style_LoginOauth.css">
+    <link rel="icon" href="./src/assets/images/Logo_principal.jpeg">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="login-image">
+          <img src="./src/assets/images/bgLogin.png" alt="Mapa">
+        </div>
+        <div class="login-form">
+          <div class="logo">
+            <img src="./src/assets/images/globo.png" alt="GeoLogo">
+            <h1>GeoLogin</h1>
+          </div>
+          <form>
+            <label for="login">Login</label>
+            <input type="name" id="login" placeholder="John Doe" required>
+      
+            <label for="password">Senha</label>
+            <input type="password" id="password" placeholder="********" required>
+    
+      
+            <button id="btn-entrar" type="submit">Log In</button>
+          </form>
+          <p>
+            <a href="./esqueceuasenha.html">Esqueceu a senha?</a>
+          </p>
+          <p>
+            <a href="./index.html">Não é adm?</a>
+          </p>
+        </div>
+      </div>
+      
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="./src/js/OAuthLogin/OauthLogin.js"></script>
+</body>
+</html>
