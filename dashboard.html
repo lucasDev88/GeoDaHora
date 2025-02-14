@@ -19,9 +19,9 @@
             <img src="./src/assets/images/globo.png" alt="GeoLogo">
             <h1>GeoLogin</h1>
           </div>
-          <form>
+          <form id="login-form">
             <label for="login">Login</label>
-            <input type="name" id="login" placeholder="John Doe" required>
+            <input type="name" id="login" placeholder="johndoe" required>
       
             <label for="password">Senha</label>
             <input type="password" id="password" placeholder="********" required>
@@ -30,16 +30,16 @@
             <button id="btn-entrar" type="submit">Log In</button>
           </form>
           <p>
-            <a href="./esqueceuasenha.html">Esqueceu a senha?</a>
+            <a href="./index.html">Quer voltar?</a>
           </p>
           <p>
-            <a href="./index.html">Não é adm?</a>
+            <a href="./singup.html">Não tem uma conta?</a>
           </p>
         </div>
       </div>
       
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script type="module" src="./src/js/OAuthLogin/OauthLogin.js"></script>
+    <script type="module" src="./src/js/OAuthLogin/server/login.js"></script>
 </body>
 </html>

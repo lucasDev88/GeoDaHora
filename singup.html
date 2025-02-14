@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoLogin - Criar Conta</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white rounded-lg shadow-lg p-8 flex w-[67%]">
+    <!-- Left Section (Map/Graphic) -->
+    <div class="hidden lg:block w-[100%] h-auto max-w-[500px] mr-7">
+      <img src="./src/assets/images/bgLogin.png" alt="Mapa do Mundo" class="rounded-lg">
+    </div>
+    
+    <!-- Right Section (Form) -->
+    <div class="w-full lg:w-1/2">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Criar Conta</h2>
+      <form id="signup-form" class="space-y-4 flex-1 flex flex-col justify-center p-[40px]">
+        <div>
+          <label for="username" class="block text-sm font-medium text-gray-700">Nome de Usuário</label>
+          <input type="text" id="username" class="mt-1 border border-gray-300  focus:ring-green-500 focus:border-green-500 block text-sm font-medium text-gray-700 w-[100%] p-4 mb-5 rounded-[10px] shadow-[0 4px 8px] overflow-hidden" class="input-field" placeholder="John Doe" required>
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+          <input type="email" id="email" class="mt-1 border border-gray-300  focus:ring-green-500 focus:border-green-500 block text-sm font-medium text-gray-700 w-[100%] p-4 mb-5 rounded-[10px] shadow-[0 4px 8px] overflow-hidden" class="input-field" placeholder="email@example.com" required>
+        </div>
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-700">Senha</label>
+          <input type="password" id="password" class="mt-1 border border-gray-300  focus:ring-green-500 focus:border-green-500 block text-sm font-medium text-gray-700 w-[100%] p-4 mb-5 rounded-[10px] shadow-[0 4px 8px] overflow-hidden" class="input-field" placeholder="********" required>
+        </div>
+
+        <div id="verification-container">
+          <label for="verification-code" class="block text-sm font-medium text-gray-700">Código de Verificação</label>
+          <input type="text" id="verification-code" class="mt-1 border border-gray-300  focus:ring-green-500 focus:border-green-500 block text-sm font-medium text-gray-700 w-[100%] p-4 mb-5 rounded-[10px] shadow-[0 4px 8px] overflow-hidden" placeholder="Insira o código recebido" required>
+          <button id="verification-code-btn" class="bg-green-500 hover:bg-green-600 text-white font-bold rounded-lg py-2 px-4 transition-colors" type="button">Enviar Código</button>
+        </div>
+
+        <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition-colors">Criar Conta</button>
+      </form>
+      <p class="mt-4 text-center text-sm text-gray-600">
+        Já tem uma conta? <a href="dashboard.html" class="text-green-500 font-semibold hover:underline">Faça login</a>
+      </p>
+    </div>
+  </div>
+  <script src="./src/js/OAuthLogin/server/singnup.js"></script>
+</body>
+</html>

@@ -2,9 +2,10 @@
   "name": "sitegeo",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "d": "npx tailwindcss -i ./src/styleTailwindCSS/input.css  -o ./src/styleTailwindCSS/output.css  --watch",
-    "w": "node ./src/js/OAuthLogin/webSocketPorta.js"
+    "b": "node ./backend/server.js"
   },
   "keywords": [],
   "author": "",

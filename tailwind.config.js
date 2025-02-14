@@ -4,7 +4,8 @@ module.exports = {
     "./src/**/*.{html,js}",
     "./dashboard.html",
     "./index.html",
-    "./esqueceuasenha.html"
+    "./esqueceuasenha.html",
+    "./singnup.html"
   ],
   theme: {
     extend: {},
